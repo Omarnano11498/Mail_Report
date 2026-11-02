@@ -1,0 +1,42 @@
+{
+  "email": "info2@misr-tameer.com",
+  "password": "ACF314rD2",
+  "imap_host": "imap.zoho.com",
+  "imap_port": 993,
+  "folders": ["INBOX", "SPAM"],
+  "days_back": 10,
+  "max_messages_per_folder": 500,
+  "output_dir": "reports",
+  "state_file": "mail_state.json",
+
+  "rules": {
+    "urgent_keywords": ["عاجل", "هام جدا", "ضروري", "urgent", "asap", "immediately", "down", "critical"],
+    "categories": [
+      {
+        "name": "مالية وفواتير",
+        "sender_patterns": ["billing", "invoice", "finance", "accounts", "payment"],
+        "keywords": ["فاتورة", "سداد", "دفع", "إيصال", "مستحقات", "invoice", "payment", "receipt", "amount due"]
+      },
+      {
+        "name": "اجتماعات ومواعيد",
+        "sender_patterns": ["calendar", "zoom", "meet", "teams"],
+        "keywords": ["اجتماع", "موعد", "دعوة", "ورشة", "meeting", "invitation", "webinar", "schedule"]
+      },
+      {
+        "name": "عملاء ومبيعات",
+        "sender_patterns": [],
+        "keywords": ["عرض سعر", "عقد", "اتفاقية", "طلب", "مشروع", "quotation", "proposal", "contract", "order"]
+      },
+      {
+        "name": "دعم فني",
+        "sender_patterns": ["support", "helpdesk", "noreply-support"],
+        "keywords": ["تذكرة", "مشكلة", "عطل", "ticket", "issue", "error", "server"]
+      },
+      {
+        "name": "تسويق ونشرات",
+        "sender_patterns": ["news", "newsletter", "offers", "marketing", "promo", "no-reply"],
+        "keywords": ["خصم", "عرض حصري", "إلغاء الاشتراك", "newsletter", "unsubscribe", "offer", "sale"]
+      }
+    ]
+  }
+}
