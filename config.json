@@ -1,6 +1,6 @@
 {
-  "email": "info2@misr-tameer.com",
-  "password": "ACF314rD2",
+  "email": "emal@domain.com",
+  "password": "123456",
   "imap_host": "imap.zoho.com",
   "imap_port": 993,
   "folders": ["INBOX", "SPAM"],
